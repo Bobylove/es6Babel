@@ -1,15 +1,20 @@
-"use strict";
+'use strict';
 
 var nameTab = [];
 
-var sayMyName = function sayMyName() {
+document.getElementById('btn').addEventListener('click', function () {
+
 	var lol = document.getElementById('name').value;
+	lol = lol.charAt(0).toUpperCase() + lol.substr(1).toLowerCase();
+
 	if (lol === "") {
+
 		document.getElementById("hello").innerHTML = "salut le pere Z'oreils !";
 	} else {
-		document.getElementById("hello").innerHTML = "Salut " + lol;
-		var tab = document.body.appendChild(document.createElement('li')).innerHTML = lol;
+
 		nameTab.push(lol);
+		document.getElementById("hello").innerHTML = 'Salut ' + lol;
+		var tab = document.body.appendChild(document.createElement('li')).innerHTML = lol;
 		console.log(nameTab);
 	}
-};
+});
