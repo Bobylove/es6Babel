@@ -1,0 +1,24 @@
+body {
+	background-color: grey;
+}
+#hello {
+	font-size: 1em;
+}
+li {
+	list-style: none;
+}
+
+.getName {
+	width: 60%;
+	height: 5em;
+	margin: 0 auto;
+	font-size: 2em;
+	
+}
+.searchName {
+
+	width: 60%;
+	height: 2em;
+	margin: 0 auto;
+	font-size: 2em;
+}
