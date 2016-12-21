@@ -7,12 +7,12 @@ document.getElementById('btn').addEventListener('click', () => {
 
 	if(lol === "") {
 
-		document.getElementById("hello").innerHTML = "salut le pere Z'oreils !";
+		document.getElementById("hello").innerHTML = "Bonjour le pere noel !";
 
 	} else {
 
 		nameTab.push(lol);
-		document.getElementById("hello").innerHTML = `Salut ${lol}`;
+		document.getElementById("hello").innerHTML = `Bonjour ${lol}`;
 		let tab =	document.body.appendChild(document.createElement('li')).innerHTML = lol;      
 		console.log(nameTab)
 		let prenom = document.getElementById('nom');

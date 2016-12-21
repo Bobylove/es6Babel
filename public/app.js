@@ -9,11 +9,11 @@ document.getElementById('btn').addEventListener('click', function () {
 
 	if (lol === "") {
 
-		document.getElementById("hello").innerHTML = "salut le pere Z'oreils !";
+		document.getElementById("hello").innerHTML = "Bonjour le pere noel !";
 	} else {
 
 		nameTab.push(lol);
-		document.getElementById("hello").innerHTML = 'Salut ' + lol;
+		document.getElementById("hello").innerHTML = 'Bonjour ' + lol;
 		var tab = document.body.appendChild(document.createElement('li')).innerHTML = lol;
 		console.log(nameTab);
 		var prenom = document.getElementById('nom');

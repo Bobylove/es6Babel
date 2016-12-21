@@ -1,5 +1,31 @@
 body {
 	background-color: grey;
+	margin-left: 10em;
+	border-radius: 2em;
+	outline: none;
+	height: 5em;
+	border-radius: 50%;
+	background-color: #6e358b;
+	animation-name: bodie;
+	animation-duration: 5.0s;
+	animation-timing-function: ease-out;
+	animation-delay: 0;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+	animation-play-state: running; 
+}
+
+@keyframes bodie {
+	0% {
+		transform: scale(1.1);
+		background-color: white;
+		border-radius: 100%; }
+		50% {
+			background-color: yellow; }
+			100% {
+				transform: scale(1.1);
+				background-color: white; } 
 }
 #hello {
 	font-size: 1em;
@@ -22,3 +48,31 @@ li {
 	margin: 0 auto;
 	font-size: 2em;
 }
+#btn {
+	margin-right: 1em;
+	margin-top: 5em;
+	border-radius: 2em;
+	outline: none;
+	height: 5em;
+	border-radius: 50%;
+	background-color: #6e358b;
+	animation-name: stretch;
+	animation-duration: 3.0s;
+	animation-timing-function: ease-out;
+	animation-delay: 0;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+	animation-play-state: running; 
+}
+
+@keyframes stretch {
+	0% {
+		transform: scale(1.1);
+		background-color: cyan;
+		border-radius: 100%; }
+		50% {
+			background-color: cyan; }
+			100% {
+				transform: scale(1.2);
+				background-color: teal; } }
