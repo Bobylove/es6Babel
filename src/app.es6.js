@@ -8,27 +8,19 @@ document.getElementById('btn').addEventListener('click', () => {
 	if(lol === "") {
 
 		document.getElementById("hello").innerHTML = "salut le pere Z'oreils !";
-	
+
 	} else {
 
 		nameTab.push(lol);
 		document.getElementById("hello").innerHTML = `Salut ${lol}`;
-		let tab =	document.body.appendChild(document.createElement('li.name')).innerHTML = lol;      
+		let tab =	document.body.appendChild(document.createElement('li')).innerHTML = lol;      
 		console.log(nameTab)
+		let prenom = document.getElementById('nom');
+		let incName = document.createElement('option');
+		let nameSrc = prenom.appendChild(incName).innerHTML = lol;
+		console.log(nameSrc);
+
 	}
 });
-
-// var input = document.getElementById('recherche');
-// input.onkeyup = function () {
-//     var filter = input.value.toUpperCase();
-//     var lis = document.getElementsByTagName('li');
-//     for (var i = 0; i < lis.length; i++) {
-//         var name = lis[i].getElementsByClassName('name')[0].innerHTML;
-//         if (name.toUpperCase().indexOf(filter) == 0) 
-//             lis[i].style.display = 'list-item';
-//         else
-//             lis[i].style.display = 'none';
-//     }
-// }
 
 
